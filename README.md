@@ -1,2 +1,2 @@
 # cerberus
-Cerberus Discord BNot
+Cerberus Discord Bot
