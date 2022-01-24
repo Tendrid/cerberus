@@ -231,7 +231,7 @@ class Threat:
             # handle weird case 
             pass
 
-    def deescalate(self):
+    def deescalate(self, threat_level):
         self.level = threat_level
         pass
 
