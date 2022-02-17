@@ -210,11 +210,17 @@ class Threat:
             pass
         elif self.level == ThreatLevel.ORANGE:
             # - send warning message
-            await self.user.send(content=THREAT_WARNING_MESSAGE)
+            try:
+                await self.user.send(content=THREAT_WARNING_MESSAGE)
+            except Exception:
+                pass
         elif self.level == ThreatLevel.RED:
             # - remove all reacts
             # - send ban warning message
-            await self.user.send(content=THREAT_BAN_MESSAGE)
+            try:
+                await self.user.send(content=THREAT_BAN_MESSAGE)
+            except Exception:
+                pass
             for event in self.events:
                 if event.removed is False:
                     await event.message.remove_reaction(event.emoji, event.user)
