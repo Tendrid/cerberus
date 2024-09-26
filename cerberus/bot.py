@@ -1,5 +1,5 @@
 
-# https://discord.com/api/oauth2/authorize?client_id=934659014334218291&permissions=1099511704576&scope=bot
+# https://discord.com/api/oauth2/authorize?client_id=<client_id>&permissions=1099511704576&scope=bot
 from dataclasses import dataclass, field
 from datetime import datetime, timedelta
 from pyexpat.errors import messages
